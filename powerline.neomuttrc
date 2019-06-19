@@ -37,7 +37,7 @@ color status blue black '().*$' 1
 color status yellow black '()\s*\s*[0-9]+\s*' 1
 color status brightblack yellow '\s*\s*[0-9]+\s*'
 color status blue yellow '() [0-9]+% \s*' 1
-color status blue yellow '() all \s*' 1
+color status blue yellow '() (all|end) \s*' 1
 color status black blue ' [0-9]+% \s*'
-color status black blue ' all \s*'
+color status black blue ' (all|end) \s*'
 color status yellow black '()\s*' 1
