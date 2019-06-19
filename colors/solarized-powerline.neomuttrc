@@ -1,0 +1,10 @@
+
+# powerline status bar hack
+color status color142 color235 ''
+color status color166 color235 ''
+color status color167 color235 ''
+color status brightcolor250 color24 '(.*)' 1
+color status color24 color235 '.*()' 1
+color status brightcolor250 color24 '\s* [0-9]+\s*'
+color status color24 color235 '().*$' 1
+

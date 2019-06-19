@@ -1,0 +1,43 @@
+# ----------------------------------------------------------------------------
+# Powerline / nerdfont
+# This is a bit "hackish" due to neomutt limitations
+#
+# Author: Sheoak <contact [at] sheoak.fr>
+# ----------------------------------------------------------------------------
+set index_format=" %T %{!%d %b} %1M %-28.28L  %?X?&·? %s"
+set pager_format=" %T %n  %s%*  %{!%d %b · %H:%M} %?X?  %X ? %P  "
+set status_format = " %r %f   %m %?n?  %n ?  %?d?  %d ?%?t?  %t ?%?F?  %F? %> %?p?   %p ?"
+
+# no addressed to me, to me, group, cc, sent by me, mailing list
+set to_chars=""
+# unchanged mailbox, changed, read only, attach mode
+set status_chars = " "
+
+set hidden_tags = "unread,draft,flagged,passed,replied,attachment,signed,encrypted"
+tag-transforms "replied" "↻ "  \
+               "encrytpted" "" \
+               "signed" "" \
+               "attachment" "" \
+
+# The formats must start with 'G' and the entire sequence is case sensitive.
+tag-formats "replied" "GR" \
+            "encrypted" "GE" \
+            "signed" "GS" \
+            "attachment" "GA" \
+
+# powerline status bar hack
+color status white black
+color status green black ''
+color status yellow black ''
+color status red black ''
+color status brightblack blue '(.*)' 1
+color status blue black '.*()' 1
+color status brightblack blue '\s* [0-9]+\s*'
+color status blue black '().*$' 1
+color status yellow black '()\s*\s*[0-9]+\s*' 1
+color status brightblack yellow '\s*\s*[0-9]+\s*'
+color status blue yellow '() [0-9]+% \s*' 1
+color status blue yellow '() all \s*' 1
+color status black blue ' [0-9]+% \s*'
+color status black blue ' all \s*'
+color status yellow black '()\s*' 1
