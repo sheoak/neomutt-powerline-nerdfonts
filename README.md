@@ -47,10 +47,14 @@ You just need to source this repository files:
   # edit neomutt configuration:
   vi ~/.config/neomutt/neomuttrc
 
-  # for gruvbox:
+  # for solarized:
+  # you must load solarized 16 colors theme BEFORE this
+  # you terminal 16 colors must be set to solarized theme
   source powerline/powerline.neomuttrc
 
-  # for solarized:
+  # for gruvbox:
+  # you must load gruvbox theme BEFORE this
+  # you terminal 16 colors must be set to gruvbox theme
   source powerline/colors/gruvbox-powerline.neomuttrc
   source powerline/powerline.neomuttrc
   ```
