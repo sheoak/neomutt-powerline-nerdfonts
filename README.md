@@ -30,6 +30,12 @@ It should work with most themes but there is some tuning added for *solarized* a
 ![Neomutt powerline, solarized](screenshots/solarized2.png)
 
 
+## Requirements
+
+- [Nerd fonts][3]
+- Terminal with nerd font configured ([kitty][6] works)
+
+
 ## Installation
 
 You just need to source this repository files:
@@ -106,3 +112,4 @@ Or source the files at the end of your configuration to avoid conflict.
 [3]: http://nerdfonts.com/
 [4]: https://github.com/morhetz/gruvbox
 [5]: https://ethanschoonover.com/solarized/
+[6]: https://github.com/kovidgoyal/kitty
