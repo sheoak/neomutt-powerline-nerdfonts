@@ -12,6 +12,7 @@ Work in progress.
 * [x] Index list
 * [ ] Browser
 * [ ] Browser list
+* [ ] Solarized patch
 
 
 [1]: https://github.com/neomutt
